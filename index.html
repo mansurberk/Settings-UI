@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1501f566dd.js" crossorigin="anonymous"></script>
+    <title>Setting UI</title>
+</head>
+
+<body>
+    <h1 onclick="showContent()" id="first" class="first">Settings</h1>
+    <svg class="wave1"  viewBox="0 0 1600 488" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M-178.584 304.931C-146.791 267.747 -77.5887 121.431 137.679 121.431C352.946 121.431 323.179 182 627.179 190.5C1326.18 219.5 1279.62 0 1477.68 0C1675.74 0 1672.18 214 1672.18 226.5C1672.18 239 1694.68 527.5 1694.68 527.5L-134.821 572C-134.821 572 -210.377 342.115 -178.584 304.931Z"
+            fill="#F34B8C" />
+    </svg>
+    <svg class="wave1" viewBox="0 0 1600 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M1856.26 285.67C1824.47 248.486 1934.5 212.739 1736 212.739C1537.5 212.739 1333.5 -8.26095 1029.5 0.239053C543.5 14.7391 391.5 -14.7609 184 45.7391C-23.5 106.239 -104 254.239 -104 266.739C-104 279.239 -17 508.239 -17 508.239L1812.5 552.739C1812.5 552.739 1888.06 322.854 1856.26 285.67Z"
+            fill="#874285" />
+    </svg>
+    <div id="content" class="content">
+        <h1>Settings</h1>
+        <h2>Language</h2>
+        <p>Let us know which language you’re most comfortable using. <br> You can change it back at any time.</p>
+        <div class="dropdown">
+            <div class="title" onclick="myDropdown()"><span id="list-title">Languages</span> <i id="icon"
+                    class="fa-solid fa-caret-down"></i></div>
+            <div class="list" id="drop-list">
+                <ul>
+                    <li onclick="english()">English</li>
+                    <li onclick="turkish()">Turkish</li>
+                    <li onclick="french()">French</li>
+                    <li onclick="italian()">Italian</li>
+                    <li onclick="spanish()">Spanish</li>
+                </ul>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="autop">
+            <span>
+                <h2>Autoplay Videos</h2>
+                <p>Choose if you want to autoplay on your browser.</p>
+            </span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="showp">
+            <span>
+                <h2>Show profile photos</h2>
+                <p>Choose whether to show or hide profile photos of other members.</p>
+            </span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="btn-cont">
+            <div onclick="saveBtn()" id="save-btn" class="save btn"><span id="savetext">Save</span><i id="fafa"
+                    class="fa-solid fa-check"></i></div>
+            <div onclick="location.reload()" class="cancel btn">Cancel</div>
+        </div>
+        <i onclick="hideContent()" class="fa-solid fa-xmark"></i>
+
+    </div>
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
