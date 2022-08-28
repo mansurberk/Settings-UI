@@ -240,7 +240,6 @@ input:checked+.slider:before {
     text-align: center;
     cursor: pointer;
     position: relative;
-    flex: 1;
 }
 
 .save {
@@ -287,6 +286,7 @@ input:checked+.slider:before {
 @media (max-width: 768px) {
     .btn {
         padding: 12px 36px 12px 36px;
+        flex: 1;
     }
     .content{
         padding: 24px;
